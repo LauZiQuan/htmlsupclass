@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Me</title>
+
+  <style>
+            #content{
+              background-color : #f2f2f2;
+            }
+
+            input[type=submit] {
+              background-color: #4CAF50;
+              padding : 12px 20px
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;
+                border-right: 1px solid #bbb;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color: pink;
+            }
+        </style>
+</head>
+<body>
+
+  <div id="content">
+        <div id="navigation">
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    <form action="confirmation.html">
+      <label>Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+      <br><br>
+
+      <label>Year</label><br>
+        <input type="radio" name="Year" value="1">Year 1
+        <input type="radio" name="Year" value="2" checked>Year 2 <br>
+        <input type="radio" name="Year" value="3">Year 3
+        <input type="radio" name="Year" value="4">Year 4 <br>
+      <br>
+
+      <label>School</label><br>
+      <select id="school" name="school">
+        <option value="">Please Select a School</option>
+        <option value="SIS">SIS</option>
+        <option value="SOE">SOE</option>
+        <option value="SOB">SOB</option>
+        <option value="0" selected>Can You Select This</option>  
+      </select>
+      <br><br>
+
+      <label>CCA</label><br>
+      <input type="checkbox" name="cca" value="dotnet" checked> Dot Net <br>
+      <input type="checkbox" name="cca" value="devera" checked> Devera <br>
+      <input type="checkbox" name="cca" value="bia"> BIA <br>
+      <input type="checkbox" name="cca" value="whitehats"> Whitehats <br>
+      <br><br>
+
+      <label>Message</label><br>
+      <textarea id="msg" name="msg" placeholder="Write something.." style="height:100px ; width : 300px;"></textarea>
+
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
