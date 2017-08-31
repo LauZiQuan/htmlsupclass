@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #navigation ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            #navigation li {
+                float: left;
+                border-right: 1px solid #bbb;
+            }
+
+            #navigation li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /* Change the link color to #111 (black) on hover */
+            #navigation li a:hover {
+                background-color: pink;
+            }
+            
+            #profile_img{
+                width : 1000px ; 
+                height : 3000px;
+                border : 5px solid grey ;
+                border-bottom : 100px solid grey;
+            }
+            
+            #profileimage_div{
+                text-align: center;
+                
+            }
+            
+            table,td,th{
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding-right: 20px;
+                padding-left: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navigation">
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="contact.html">Contact</a></li>
+               <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            <h1>This is my Profile</h1>
+            <div id="profileimage_div">
+            <img id="profile_img" src="cat.jpg" style="width : 200px ; height : 200px" alt="cat" />
+            </div>
+            
+            <h2>This is my Timetable</h2>
+            <table>
+                <tr>
+                    <th rowspan="2">Year</th>
+                    <th colspan="2">Modules</th>
+                </tr>
+                <tr>
+                    <td>Semester 1</td>
+                    <td>Semester 2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <!--
+                        ol have a few type eg: 
+                            type="1"	The list items will be numbered with numbers (default)
+                            type="A"	The list items will be numbered with uppercase letters
+                            type="a"	The list items will be numbered with lowercase letters
+                            type="I"	The list items will be numbered with uppercase roman numbers
+                            type="i"	The list items will be numbered with lowercase roman numbers
+                        -->
+                        <ol type="i">
+                            <li>IS200</li>
+                            <li>IS101</li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>IS201</li>
+                            <li>IS202</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>
